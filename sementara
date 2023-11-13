@@ -1,0 +1,160 @@
+import {React, useState} from 'react';
+import {StyleSheet, Text, View, Image, Button} from 'react-native';
+import 'react-native-gesture-handler';
+import NavigationContainer from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+
+const Tab = createBottomTabNavigator();
+
+function home(){
+    return (
+      <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="jadwal" component={JadwalsScreen} />
+        <Tab.Screen name="Kamus" component={KamusScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+    );
+   }
+
+function HomeScreen({ navigation }) {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Home Screen</Text>
+        <Button
+          title="Go to Settings"
+          onPress={() => navigation.navigate('Settings')}
+        />
+      </View>
+    );
+  }
+
+function SettingsScreen({ navigation }) {
+      return (
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <Text>Settings Screen</Text>
+          <Button
+            title="Go back to Home"
+            onPress={() => navigation.goBack()}
+          />
+        </View>
+      );
+    }
+
+const MyButton1 = (props) => {
+  const [buttonColor, setButtonColor] = useState(props.color);
+      return (
+        <Button
+          title="Home"
+          color={buttonColor}
+          onPress={() => setButtonColor('red')}
+        />
+      );
+    };
+
+const MyButton2 = (props) => {
+      const [buttonColor, setButtonColor] = useState(props.color);
+      return (
+        <Button
+          title="Kamus"
+          color={buttonColor}
+          onPress={() => setButtonColor('red')}
+        />
+      );
+    };
+
+const MyButton3 = (props) => {
+      const [buttonColor, setButtonColor] = useState(props.color);
+      return (
+        <Button
+          title="Jadwal"
+          color={buttonColor}
+          onPress={() => setButtonColor('red')}
+        />
+      );
+    };
+
+const MyButton4 = (props) => {
+      const [buttonColor, setButtonColor] = useState(props.color);
+      return (
+        <Button
+          title="Settings"
+          color={buttonColor}
+          onPress={() => setButtonColor('red')}
+        />
+      );
+    };
+    
+    const styles = StyleSheet.create({
+      sirkel1:{
+       width: 50,
+       height: 50,
+       backgroundColor: 'red',
+       borderWidth: 3,
+       borderRadius: 50,
+       position: 'absolute', top: 7, right: 7},
+    
+      sirkel2:{
+       width: 340,
+       height: 40,
+       backgroundColor: 'gray',
+       borderWidth: 3,
+       borderRadius: 50,
+       position: 'absolute', top: 13, left: 7},
+
+      box2:{
+        width: 400,
+        height: 175,
+        backgroundColor: 'white',
+        borderWidth: 3,
+        borderColor: 'black',
+        borderRadius: 15,
+        position: 'absolute', bottom: 280, left: 5,
+        opacity: 0.5},
+    
+      box3:{
+        width: 400,
+        height: 175,
+        backgroundColor: 'white',
+        borderWidth: 3,
+        borderColor: 'black',
+        borderRadius: 15,
+        position: 'absolute', bottom: 80, left: 5,
+        opacity: 0.5},
+      
+      box4:{
+        backgroundColor: 'brown', 
+        height: 54, 
+        flexDirection: 'row', 
+        opacity: 0.5,
+        position: 'relative', top: 770
+        },
+  
+      gambar1:{
+        width: 400,
+        height: 175,
+        borderRadius: 20,
+        position: 'absolute', top: 80, left: 5},
+
+      gambar2:{
+        width: 365,
+        height: 50,
+        borderRadius: 500,
+        position: 'absolute', top: 280, left: 20},
+      
+      gambar3:{
+        width: 150,
+        height: 150,
+        borderRadius: 10,
+        position: 'absolute', bottom: 292, left: 17},
+
+      gambar4:{
+        width: 150,
+        height: 150,
+        borderRadius: 10,
+        position: 'absolute', bottom: 92, left: 17},
+    })
+
+export default home();

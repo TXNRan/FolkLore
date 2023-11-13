@@ -1,0 +1,124 @@
+<View style={{ flex: 1}}>
+        <View style={{ backgroundColor: 'wheat',opacity: 0.8}}>
+        <View style={styles.sirkel1}></View>
+        <View style={styles.sirkel2}></View>
+        <View style={styles.box2}></View>
+        <View style={styles.box3}></View>
+        <View style={styles.box4}>
+        <View
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              flex: 1}}>
+            <MyButton1 color= 'black'> </MyButton1>
+        </View>
+        <View
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              flex: 1}}>
+            <MyButton2 color= 'black'> </MyButton2>
+        </View>
+        <View
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              flex: 1}}>
+            <MyButton3 color= 'black'> </MyButton3>
+        </View>
+        <View
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              flex: 1}}>
+            <MyButton4 color= 'black'> </MyButton4>
+        </View>
+        </View>
+
+        <Text style={{
+                fontSize: 16,
+                color: 'white',
+                marginTop: 4,
+                position: 'absolute', top: 17, left: 30,
+              }}>Cari Barang, Cerita, dan Wisata</Text>
+        <Text style={{
+                fontSize: 26,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 200, left: 200,
+              }}>(Wayang Arjuna)</Text>
+        <Text style={{
+                fontSize: 14,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 160, left: 200,
+              }}>Dijual Wayang Kulit (Arjuna)</Text>
+        <Text style={{
+                fontSize: 12,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 140, left: 200,
+              }}>Lokasi - Dinoyo, Kota Malang</Text>
+        <Text style={{
+                fontSize: 12,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 120, left: 200,
+              }}>Rp. 5.000.000</Text>
+        <Text style={{
+                fontSize: 26,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 400, left: 200,
+              }}>(Wayang Petruk)</Text>
+        <Text style={{
+                fontSize: 14,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 360, left: 200,
+              }}>Jual Wayang Petruk Asli</Text>
+        <Text style={{
+                fontSize: 12,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 340, left: 200,
+              }}>Lokasi - Pasuruan, Kab. Malang</Text>
+        <Text style={{
+                fontSize: 12,
+                color: 'black',
+                marginTop: 4,
+                position: 'absolute', bottom: 320, left: 200,
+              }}>Rp. 10.000.000</Text>
+
+        <Image source={require('./halaman/aset/1.jpg')} style={styles.gambar1}></Image>
+        <Image source={require('./halaman/aset/5.jpeg')} style={styles.gambar2}></Image>
+        <Image source={require('./halaman/aset/2.jpg')} style={styles.gambar3}></Image>
+        <Image source={require('./halaman/aset/3.jpg')} style={styles.gambar4}></Image>
+        
+        <Text style={{
+                fontSize: 24,
+                color: 'white',
+                fontWeight: 'bold',
+                marginTop: 4,
+                position: 'absolute', top: 284, left: 120,
+              }}>Sedang Trending!</Text>
+        <Text style={{
+                fontSize: 24,
+                color: 'white',
+                marginTop: 4,
+                position: 'absolute', top: 110, left: 30,
+              }}>Apa Yang Baru?</Text>
+          <Text style={{
+                fontSize: 24,
+                color: 'white',
+                marginTop: 4,
+                position: 'absolute', top: 140, left: 30,
+              }}>Ada Pertunjukan!</Text>
+          <Text style={{
+                fontSize: 16,
+                color: 'white',
+                marginTop: 4,
+                position: 'absolute', top: 170, left: 30,
+              }}>Ayo Hadiri di Sekitarmu!</Text>
+      </View>
+        </View>
